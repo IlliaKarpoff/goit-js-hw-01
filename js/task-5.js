@@ -13,7 +13,7 @@
 // Индия - 80 кредитов
 // Ямайка - 120 кредитов
 
-'use strict'
+'use strict';
 const myCountry = prompt('Enter your country');
 let cost;
 
