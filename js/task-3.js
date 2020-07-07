@@ -9,7 +9,7 @@
 // В противном случае, то есть если ни одно из предыдущих условий не выполнилось, записать в message строку 'Доступ запрещен, неверный пароль!'
 // После всех проверок вывести в alert значение переменной message.
 
-
+'use strict';
 const ADMIN_PASSWORD = 'jqueryismyjam';
 let message;
 const userEnter = prompt('Enter admin password!');
