@@ -9,9 +9,9 @@
 
 'use strict';
 const total = 100;
-const ordered = prompt('Сколько товаров хотите заказать?');
+const ordered = prompt("Сколько товаров хотите заказать?");
 if (ordered > total) {
-    console.log('На складе недостаточно тoваров!');
-} else  {
-    console.log('Заказ оформлен, с вами свяжется менеджер!');
-};
+  console.log("На складе недостаточно тoваров!");
+} else {
+  console.log("Заказ оформлен, с вами свяжется менеджер!");
+}
