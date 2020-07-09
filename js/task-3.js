@@ -13,9 +13,9 @@
 const ADMIN_PASSWORD = "jqueryismyjam";
 let message;
 const userEnter = prompt("Enter admin password!");
-if (userEnter == ADMIN_PASSWORD) {
+if (userEnter === ADMIN_PASSWORD) {
   message = "You are welcome!";
-} else if (userEnter == null) {
+} else if (userEnter === null) {
   message = "Canceled by user!";
 } else {
   message = "Access denied. Incorrect password!";

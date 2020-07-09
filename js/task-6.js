@@ -15,11 +15,16 @@ let input;
 do {
   input = prompt("Enter a number please!");
 
-  if (Number.isNaN(Number(input)) == true) {
+  if (Number.isNaN(Number(input)) === true) {
     alert("This is not a number! Learn numbers please and try later.");
   } else {
-    total = total + Number(input);
+    total += Number(input);
   }
-} while (input != null);
+} while (input !== null);
 
+if (input === null && total === 0) {
+  alert(`Canceled by user! 
+Total amount is ${total}`);
+} else {
 alert(`Total amount is ${total}`);
+}

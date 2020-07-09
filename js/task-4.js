@@ -16,14 +16,14 @@ let credits = 23580;
 const pricePerDroid = 3000;
 let totalPrice;
 const userOrder = prompt("How many droids do you want to buy?");
-if (userOrder == null) {
+if (userOrder === null) {
   console.log("Canceled by user!");
 } else {
   totalPrice = pricePerDroid * userOrder;
   if (totalPrice > credits) {
     console.log("it is not enough credits!");
   } else {
-    credits = credits - totalPrice;
+    credits -= totalPrice;
     console.log(`Congratulations! You have bought ${userOrder} droids, there are ${credits} credits left.`);
   }
 }

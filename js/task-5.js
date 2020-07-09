@@ -15,37 +15,40 @@
 // Ямайка - 120 кредитов
 
 "use strict";
-const myCountry = prompt("Enter your country");
+let myCountry = prompt("Enter your country");
 let cost;
 
-if (myCountry != null) {
+if (myCountry !== null) {
   switch (myCountry.toLowerCase()) {
     case "china":
       cost = 100;
-      alert(`Delivery in ${myCountry} will cost ${cost} credits.`);
+      myCountry = "China";
       break;
 
     case "chili":
       cost = 250;
-      alert(`Delivery in ${myCountry} will cost ${cost} credits.`);
+      myCountry = "Chili";
       break;
 
     case "australia":
       cost = 170;
-      alert(`Delivery in ${myCountry} will cost ${cost} credits.`);
+      myCountry = "Australia";
       break;
 
     case "india":
       cost = 80;
-      alert(`Delivery in ${myCountry} will cost ${cost} credits.`);
+      myCountry = "India";
       break;
 
     case "jamaica":
       cost = 120;
-      alert(`Delivery in ${myCountry} will cost ${cost} credits.`);
+      myCountry = "Jamaica";
       break;
 
     default:
       alert("Delivery in your country is not possible");
   }
+}
+if (cost !== undefined) {
+  alert(`Delivery in ${myCountry} will cost ${cost} credits.`);
 }
